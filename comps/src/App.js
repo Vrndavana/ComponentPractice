@@ -11,6 +11,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import MouseTracker from './components/Mouse';
 import {BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -18,6 +19,7 @@ import S1 from './components/S1';
 import S2 from './components/S2';
 import S3 from './components/S3';
 function App() {
+
 
   //  Follow Along with Repo open to see Render 
   //  Array
@@ -45,6 +47,7 @@ function App() {
   return (
     
     <section>
+      <MouseTracker/>
       <h1 className="Open">Follow Along with Repo open to See 'return' Render</h1>
       {/* CONST*/}
       <div className="Label"> Const Rendering </div> 
