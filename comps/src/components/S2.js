@@ -11,10 +11,7 @@ function S2()  {
              <Link to='/Projects' id="asd">      Projects         </Link>
             </nav>
             <div>
-             <p> This example shows how STATE, is saved and updated.</p> <h3> {value} </h3> 
-             <button onClick={() => setValue((value + 1))}>Increment Value</button>
-             <button onClick={() => setValue((value - 1))}>decrement Value</button>
-             <button onClick={() => setValue((value == 0))}> Reset Value</button>
+
             </div>
             <nav>
              <Link to='/S1' id="sasd">           Step 1           </Link>

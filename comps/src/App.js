@@ -68,7 +68,7 @@ function App() {
        <h1>{listItems}</h1>
       </div>
 
-      <div className="Label"> Components </div>
+      <div className="Label"> Dependencies, Imports, Initializing </div>
       <div className="RApp">
        <h1>Importing Components</h1>
        <p> set up Browser Router, by installing, importing, and initializing it</p>

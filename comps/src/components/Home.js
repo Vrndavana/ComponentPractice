@@ -1,8 +1,7 @@
 import React from 'react';
-// import Me from '../Images/Me.jpg';
 import {Link} from 'react-router-dom';
-// import {Nav} from '../Components/styled';
-// import Projects from '../Components/Projects';
+import Tog from './Toggle';
+
 
 function Home() {
 
@@ -13,6 +12,9 @@ function Home() {
              <Link to='/Projects' id="asd">      Projects         </Link>
             </nav>
             <h3>Click Projects for More Examples</h3>
+            <div className="Label"> State </div>
+            <h2>Toggle</h2>
+            <Tog/>
 
         </div>
     )}
