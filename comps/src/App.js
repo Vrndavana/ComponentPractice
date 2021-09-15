@@ -12,14 +12,17 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import {BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './components/Home'
-
+import Home from './components/Home';
+import Projects from './components/Projects';
+import S1 from './components/S1';
+import S2 from './components/S2';
+import S3 from './components/S3';
 function App() {
 
   //  Follow Along with Repo open to see Render 
   //  Array
   const numbers = [1, 2, 3, 4, 5];
-  const doubled = numbers.map((number) => number * 2);
+  // const doubled = numbers.map((number) => number * 2);
   // console.log(dnumbers);
   // console.log(doubled);
 
@@ -66,11 +69,17 @@ function App() {
       <div className="RApp">
        <h1>Importing Components</h1>
        <p> set up Browser Router, by installing, importing, and initializing it</p>
+       <p> check VSCode to see how BrowserRouter connected</p>
        <BrowserRouter>
         <Switch> 
-          <Route exact path='/'>                <Home/>           </Route>       
+          <Route exact path='/'>                <Home/>           </Route> 
+          <Route exact path='/Projects'>        <Projects/>       </Route>  
+          <Route exact path='/S1'>              <S1/>             </Route> 
+          <Route exact path='/S2'>              <S2/>             </Route>
+          <Route exact path='/S3'>              <S3/>             </Route>    
         </Switch>
       </BrowserRouter>
+ 
 {/* Build a mini caraasel that shows a couple different components */}
 
       </div>

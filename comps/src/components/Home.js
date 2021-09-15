@@ -1,6 +1,6 @@
 import React from 'react';
 // import Me from '../Images/Me.jpg';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 // import {Nav} from '../Components/styled';
 // import Projects from '../Components/Projects';
 
@@ -9,18 +9,10 @@ function Home() {
     return(
 
         <div>
-            <button>
-                ADD
-            </button>
-            <button>
-                Nav
-                </button>
-                <button>
-                Buttons
-                </button>
-                <button>
-                Next
-                </button>
+           <nav>
+             <Link to='/Projects' id="asd">      Projects         </Link>
+            </nav>
+            <h3>Click Projects for More Examples</h3>
 
         </div>
     )}
