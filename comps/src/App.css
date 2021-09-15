@@ -1,11 +1,18 @@
 /* Label Seperator */
+.Space {margin: 10% 0;}
 .Label {
   width: auto;
   text-align: center;
   font-size: 2rem;
   background-color: rgb(160, 185, 143);
 }
-
+.Open {
+  width: auto;
+  text-align: center;
+  font-size: 4rem;
+  background-color: rgb(160, 185, 143);
+  padding: 3% 0;
+}
 /* REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP --- */
 /* REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP --- */
 /* REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP --- */
@@ -20,7 +27,10 @@
 @media (prefers-reduced-motion: no-preference) {
   .RApp-logo {animation: App-logo-spin infinite 10s linear;}
 }
-
+@keyframes App-logo-spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 .RApp-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -36,10 +46,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
+
 /* REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP ---  REACT DEFAULT APP --- */
 
 

@@ -10,8 +10,9 @@
 // Imports (Npm instal dependencies - Import them - Render )
 import logo from './logo.svg';
 import './App.css';
-
-
+import React from 'react';
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './components/Home'
 
 function App() {
 
@@ -26,21 +27,22 @@ function App() {
   const listItems = numbers.map((items)=><li>{items}</li>);
 
 
+
+
+
+
+
+
+
+
+
+
+  
+
   return (
     
     <section>
-      <h1 className="Label">Follow Along with Repo open to See Render</h1>
-      {/* // REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT   */}
-      <div className="Label">REACT DEFAULT APP</div>   
-      <div className="RApp">
-      <header className="RApp-header">
-        <p> Edit src/App.js and save to reload. </p>
-        <img src={logo} className="RApp-logo" alt="Rlogo" />
-        <a className="RApp-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer"> Learn React </a>
-      </header>
-      </div>
-      { /*  REACT REACT REACT  */}
-
+      <h1 className="Open">Follow Along with Repo open to See 'return' Render</h1>
       {/* CONST*/}
       <div className="Label"> Const Rendering </div> 
       <div className="RApp"> 
@@ -51,7 +53,7 @@ function App() {
        <p> const numbers = [1, 2, 3, 4, 5]; </p>
        <h4>Render</h4>
        <p> Under return</p>
-       <p> put a 'p' tag with *numbers* in curly brackets to render {numbers} </p>
+       <p> put a 'p' tag or header with *numbers* in curly brackets to render {numbers} </p>
        <h5>{numbers}</h5>
        {/* <p>{doubled}</p> */}
        {/* UL and LI */}
@@ -60,24 +62,52 @@ function App() {
        <h1>{listItems}</h1>
       </div>
 
-      
-      <div className="Label"> Forms </div> 
-      <div className="RApp"> 
-      <h1>Configure</h1>
-      <p> Under Function App()</p>
-       <h4>Render</h4>
-       <p> Under return</p>
+      <div className="Label"> Components </div>
+      <div className="RApp">
+       <h1>Importing Components</h1>
+       <p> set up Browser Router, by installing, importing, and initializing it</p>
+       <BrowserRouter>
+        <Switch> 
+          <Route exact path='/'>                <Home/>           </Route>       
+        </Switch>
+      </BrowserRouter>
+{/* Build a mini caraasel that shows a couple different components */}
 
-      
       </div>
 
-      
   
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* // REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT REACT   */}
+      <div className="Space">V</div>
+      <div className="Label">REACT DEFAULT APP</div>   
+      <div className="RApp">
+      <header className="RApp-header">
+        <p> Edit src/App.js and save to reload. </p>
+        <img src={logo} className="RApp-logo" alt="Rlogo" />
+        <a className="RApp-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer"> Learn React </a>
+      </header>
+      </div>
+      { /*  REACT REACT REACT  */}    
     </section>
   );
 }
