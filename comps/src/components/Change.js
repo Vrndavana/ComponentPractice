@@ -23,6 +23,10 @@ class ChangeColor extends Component {
   }
 } 
 
+
+
+
+
 export default ChangeColor;
 
 {/* <h1> {this.props.title} </h1> */}
