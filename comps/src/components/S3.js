@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Char from './Character';
-import NameChange from './Name';
-import Tog from './Toggle';
 
 
 

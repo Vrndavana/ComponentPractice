@@ -35,20 +35,12 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-  
-
   return (
     
     <section>
       <MouseTracker/>
       <h1 className="Open">Follow Along with Repo open to See 'return' Render</h1>
+      <h2 className="Open">Practicing the Basics</h2>
       {/* CONST*/}
       <div className="Label"> Const Rendering </div> 
       <div className="RApp"> 
