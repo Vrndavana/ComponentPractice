@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Tog extends Component {
+class TButton extends Component {
   constructor(props) {
     super(props)
     this.state = {textDisplay: false}
@@ -22,14 +22,16 @@ class Tog extends Component {
     return (
       <div>
         <button onClick={() => {this.ToggleButton() ;this.handleClick();} }>
+
          {this.state.isToggleOn ? 'ON' : 'OFF'}
+
        </button>
        <div> {!this.state.textDisplay && this.props.text}  </div>         
       </div>
     );
   }
 }
-  export default Tog;
+  export default TButton;
 
 
   // <button onClick={this.handleClick}>

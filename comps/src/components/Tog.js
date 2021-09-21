@@ -1,5 +1,7 @@
 import React from 'react';
-import Form from './Form'; 
+// import Form from './Form'; 
+
+
 
 
 
@@ -8,11 +10,13 @@ class Tog extends React.Component {
       super()
       this.state = {
         isHidden: true
+        
       }
     }
-    toggleHidden () {
+    toggleHidden () {  console.log("Toggle Hidden Fired ")
       this.setState({
         isHidden: !this.state.isHidden
+      
       })
     }
     
@@ -20,7 +24,7 @@ class Tog extends React.Component {
       return (
         <div>
           <button onClick={this.toggleHidden.bind(this)} >
-           {this.state.isToggleOn ? 'ON' : 'Menu'}
+           {this.state.isHidden ? 'Expand' : 'Hide'}
           </button>
           {!this.state.isHidden && <Child />}
         </div>
@@ -32,10 +36,9 @@ class Tog extends React.Component {
   <div className='modal'>
         <h1>Hello, World!</h1>
         <div> OOO </div>
-        <Form/>
+        {/* <Form/> */}
     </div>
   )
-  
 
   export default Tog ;
 

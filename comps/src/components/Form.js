@@ -1,23 +1,23 @@
-import React from 'react';
+// import React from 'react';
 
 
-class Form extends React.Components {
+// class Form extends React.Components {
 
-constructor(props){
-    super(props);
-    this.state = {value: ''};
-
-
-}
-
-handleChange(e) {
-    this.setState({value: event.target.value });
-}
+// constructor(props){
+//     super(props);
+//     this.state = {value: ''};
 
 
-render() {
-    return 
+// }
+
+// handleChange(e) {
+//     this.setState({value: event.target.value });
+// }
+
+
+// render() {
+//     return 
     
-}
-}
-export default Form
+// }
+// }
+// export default Form
